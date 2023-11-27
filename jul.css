@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*Establish the 12 columns for consistency and convenience*/
+.col1 {width: 8.33%;}
+.col2 {width: 16.66%;}
+.col3 {width: 25%;}
+.col4 {width: 33.33%;}
+.col5 {width: 41.66%;}
+.col6 {width: 50%;}
+.col7 {width: 58.33%;}
+.col8 {width: 66.66%;}
+.col9 {width: 75%;}
+.col10 {width: 83.33%;}
+.col11 {width: 91.66%;}
+.col12 {width: 100%;}
+
+header {
+    text-align: center;
+    color: #ffffff;
+    background-color: rgb(104, 21, 21);
+    padding: 15px;
+}
+
+[class*="col"] {
+    padding: 3px;
+    float: left;
+}
+.liste h3 {
+    text-align: center;
+}
+.liste ol {
+    padding: 0;
+    margin: 0;
+}
+.liste li {
+    text-align: center;
+    padding: 4px;
+    margin-bottom: 4px;
+    color: #ffffff;
+    background-color: lightskyblue;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2), 0 1px 5px rgba(0,0,0,0.35);
+}
+.liste li:hover {
+    background-color: rgb(0, 110, 255);
+}
+.juledikt {
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+}
+.col9 img {
+    max-width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+/*Allow screenchange for mobile devices*/
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col"] {
+      width: 100%;
+    }
+}
+/*Change color of hyperlinks to normal*/
+li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+html {
+    width: auto;
+    height: auto;
+    background-image: url('https://img.freepik.com/free-photo/illustration-cosmic-background-with-orange-neon-laser-lights_181624-19567.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
